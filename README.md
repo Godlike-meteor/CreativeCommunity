@@ -1,7 +1,7 @@
 # React.js 16.4 简书 demo
 
 ![Yarn](https://img.shields.io/badge/Yarn-1.13.0-brightgreen.svg)&nbsp;
-![Redux-thunk](https://img.shields.io/badge/Redux-thunk-2.1.0-brightgreen.svg)&nbsp;
+![Redux-thunk](https://img.shields.io/badge/Thunk-2.1.0-brightgreen.svg)&nbsp;
 ![Redux](https://img.shields.io/badge/Redux-4.0-brightgreen.svg)
 
 
