@@ -42,6 +42,27 @@ const defaultState = fromJS({
   }, {
     id: 5,
     imgUrl: 'http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png'
+  }],
+  writerList: [{
+    id: 1,
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+    title: '木清琳',
+    desc: '写了295.4k字 · 9.9k喜欢'
+  }, {
+    id: 2,
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+    title: '木清琳',
+    desc: '写了295.4k字 · 9.9k喜欢'
+  }, {
+    id: 3,
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+    title: '木清琳',
+    desc: '写了295.4k字 · 9.9k喜欢'
+  }, {
+    id: 4,
+    imgUrl: 'http://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp',
+    title: '木清琳',
+    desc: '写了295.4k字 · 9.9k喜欢'
   }]
 });
 

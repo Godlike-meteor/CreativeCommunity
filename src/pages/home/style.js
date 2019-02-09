@@ -41,6 +41,7 @@ export const TopicItem = styled.div`
   color: #000;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
+  cursor: pointer;
   .topic-pic {
     width: 32px;
     height: 32px;
@@ -66,6 +67,7 @@ export const ListItem = styled.div`
 export const ListInfo = styled.div`
   width: 500px;
   float: left;
+  cursor: pointer;
   .list_title {
     font-size: 18px;
     line-height 27px;
@@ -90,13 +92,100 @@ export const RecommendItem = styled.div`
   margin-top: 5px;
   background: url(${(props) => props.imgUrl});
   background-size: contain;
+  cursor: pointer;
+`;
+
+export const AttentionWrapper = styled.div`
+  position: relative;
+  width: 258px;
+  height: 70px;
+  padding: 10px;
+  line-height: 70px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  cursor: pointer;
+  .attention_img {
+    width: 70px;
+    height: 70px;
+    display: block;
+  }
+`;
+
+export const AttentionTitle = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  font-size: 14px;
+  color: #333;
+`;
+
+export const AttentionDesc = styled.div`
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
 `;
 
 export const WriterWrapper = styled.div`
+  position: relative;
   width: 278px;
+  height: 300px;
+  margin-top: 30px;
   border: 1px solid #dcdcdc;
   border-radius: 3px;
-  height: 300px;
-  line-height: 300px;
-  text-align: center;
+  .writer_connect {
+    width: 100%;
+    height: 260px;
+    margin-top: 40px;
+  }
+`;
+
+export const WriterTitle = styled.div`
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #969696;
+`;
+
+export const WriterDesc = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #969696;
+`;
+
+export const WriterItem = styled.div`
+  position: relative;
+  top: 10px;
+  width: 100%;
+  height: 60px;
+  .list_img {
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+`;
+
+export const WriterInfo = styled.div`
+  position: absolute;
+  top: 12px;
+  left: 75px;
+  width: 150px;
+  height: 45px;
+  .listinfo_title {
+    font-size: 14px;
+    color: #333;
+  }
+  .listinfo_desc {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #969696;
+  }
 `;

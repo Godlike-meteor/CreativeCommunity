@@ -3,6 +3,7 @@ import Topic from './component/Topic';
 import List from './component/List';
 import Recommend from './component/Recommend';
 import Writer from './component/Writer';
+import Attention from './component/Attention';
 import {
   HomeWrapper,
   HomeLeft,
@@ -21,6 +22,7 @@ class Home extends Component {
           </HomeLeft>
           <HomeRight>
             <Recommend />
+            <Attention />
             <Writer />
           </HomeRight>
         </HomeWrapper>
