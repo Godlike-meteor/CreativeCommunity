@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   AttentionWrapper,
   AttentionTitle,
   AttentionDesc
 } from '../style';
 
-class Attention extends Component {
+class Attention extends PureComponent {
   render () {
     return (
       <AttentionWrapper>
