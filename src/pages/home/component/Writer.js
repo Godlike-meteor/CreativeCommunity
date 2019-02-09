@@ -14,6 +14,7 @@ class Writer extends Component {
     return (
       <WriterWrapper>
         <WriterTitle>推荐作者</WriterTitle>
+        <i className='iconfont'>&#xe851;</i>
         <WriterDesc>换一批</WriterDesc>
         <div className='writer_connect'>
         {

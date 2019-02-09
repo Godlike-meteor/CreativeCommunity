@@ -140,6 +140,17 @@ export const WriterWrapper = styled.div`
     height: 260px;
     margin-top: 40px;
   }
+  .iconfont {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 210px;
+    font-size: 12px;
+    margin-right: 2px;
+    transition: all .2s ease-in;
+    transform-origin: center center;
+    color: #969696;
+  }
 `;
 
 export const WriterTitle = styled.div`
@@ -156,6 +167,7 @@ export const WriterDesc = styled.div`
   right: 10px;
   font-size: 14px;
   color: #969696;
+  cursor: pointer;
 `;
 
 export const WriterItem = styled.div`
@@ -182,10 +194,23 @@ export const WriterInfo = styled.div`
   .listinfo_title {
     font-size: 14px;
     color: #333;
+    cursor: pointer;
   }
   .listinfo_desc {
     margin-top: 12px;
     font-size: 12px;
     color: #969696;
   }
+`;
+
+export const LoadMove = styled.div`
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 30px 0;
+  background: #a5a5a5;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 `;
