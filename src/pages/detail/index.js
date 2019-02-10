@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { actionCreators } from './store';
 import {
   DetailWrapper,
   Header,
@@ -7,19 +9,29 @@ import {
 
 class Detail extends Component {
   render () {
+    const { title, content } = this.props;
     return (
       <DetailWrapper>
-        <Header>舞一世成殇</Header>
-        <Content>
-          <img src="//upload-images.jianshu.io/upload_images/7342621-223ccd2b38f5157c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/864/format/webp" alt="" />
-          <p>一出纸醉金迷闹剧,一袭染尽红尘的衣,唱罢西厢谁盼得此生相许,——河图《第三十八年夏至》</p>
-          <p>一出纸醉金迷闹剧 ,一袭染尽红尘的衣,唱罢西厢谁盼得此生相许,——河图《第三十八年夏至》</p>
-          <p>一出纸醉金迷闹剧 ,一袭染尽红尘的衣,唱罢西厢谁盼得此生相许,——河图《第三十八年夏至》</p>
-          <p>一出纸醉金迷闹剧 ,一袭染尽红尘的衣,唱罢西厢谁盼得此生相许,——河图《第三十八年夏至》</p>
-        </Content>
+        <Header>{title}</Header>
+        <Content dangerouslySetInnerHTML={{__html: content}} />
       </DetailWrapper>
     )
   }
+
+  componentDidMount () {
+    this.props.getDetail(this.props.match.params.id);
+  }
 };
 
-export default Detail;
+const mapState = (state) => ({
+  title: state.getIn(['detail','title']),
+  content: state.getIn(['detail','content'])
+});
+
+const mapDispatch = (dispatch) => ({
+  getDetail (id) {
+    dispatch(actionCreators.getDetail(id));
+  }
+})
+
+export default connect(mapState, mapDispatch)(Detail);
